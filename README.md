@@ -6,8 +6,11 @@ Características do Programa 🦾
 
 Código desenvolvido em linguagem C; 🖥️
 A estrutura de dados escolhida Árvore Binária de Busca (BST). 🔗
+
 O programa é acessado através do terminal; ⌨️
+
 Ele tem CRUD 📊
+
 Os dados sejam mantidos em um arquivo de texto chamado banco_dados.txt; 💾
 
   ---
@@ -54,9 +57,11 @@ O arquivo database.txt é utilizado para armazenar os contatos registrados
 ---
 
 Para compilar o projeto, utilize o seguinte comando no terminal:
+
 `gcc votacao.c -o votacao`
 
 Para executar o programa após a compilação:
+
 `./votacao`
 
 
