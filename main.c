@@ -43,11 +43,11 @@ Node* min(Node* raiz){
     return raiz;
 }
 
-Node* delete(Node* raiz, char* titulo){
+Node* apaga(Node* raiz, char* titulo){
     if (!raiz) return NULL;
     int cmp = strcmp(titulo, raiz->dados.titulo);
-    if (cmp < 0) raiz->esq = delete(raiz->esq, titulo);
-    else if (cmp > 0) raiz->dir == delete(raiz->dir, titulo);
+    if (cmp < 0) raiz->esq = apaga(raiz->esq, titulo);
+    else if (cmp > 0) raiz->dir = apaga(raiz->dir, titulo);
     else{
         if (!raiz->esq){
             Node* temp = raiz->dir;
@@ -60,7 +60,7 @@ Node* delete(Node* raiz, char* titulo){
         }
         Node* temp = min(raiz->dir);
         raiz->dados = temp->dados;
-        raiz->dir = delete(raiz->dir, temp->dados.titulo);
+        raiz->dir = apaga(raiz->dir, temp->dados.titulo);
     }
     return raiz;
 }
@@ -92,7 +92,7 @@ Node* loadArq(){
     Node* raiz = NULL;
     Eleitor e;
     while (fscanf(f, "%[^;];%[^;];%[^\n]\n", e.nome, e.titulo, e.voto) != EOF){
-        raiz == add(raiz, e);
+        raiz = add(raiz, e);
     }
     fclose(f);
     return raiz;
@@ -143,7 +143,7 @@ int main(){
                 break;
             case 4:
                 printf("Título de eletor para apagar: "); fgets(titulo, 20, stdin); strtok(titulo, "\n");
-                raiz = delete(raiz, titulo);
+                raiz = apaga(raiz, titulo);
                 saveArq(raiz);
                 break;
             case 5:
