@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <locale.h>
 
 typedef struct Eleitor{
     char nome[100];
@@ -98,7 +99,8 @@ Node* loadArq(){
     return raiz;
 }
 
-int main(){
+int main(){ 
+    setlocale(LC_ALL, "pt_BR.UTF-8");
     Node* raiz = loadArq();
     int opcao;
     char titulo[20];
@@ -106,7 +108,7 @@ int main(){
 
     do{
         printf("\nSistema de Votação\n");
-        printf("1 - Cadastrar eleitor\n");
+        printf("1- Cadastrar eleitor\n");
         printf("2- Buscar eleitor\n");
         printf("3- Atualizar voto\n");
         printf("4- Remover eleitor\n");
