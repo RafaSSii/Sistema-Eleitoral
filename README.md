@@ -54,10 +54,10 @@ O arquivo database.txt é utilizado para armazenar os contatos registrados
 ---
 
 Para compilar o projeto, utilize o seguinte comando no terminal:
-gcc votacao.c -o votacao
+`gcc votacao.c -o votacao`
 
 Para executar o programa após a compilação:
-./votacao
+`./votacao`
 
 
 
