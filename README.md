@@ -5,6 +5,7 @@ Este sistema permite gerenciar eleitores com base em seus títulos de eleitor ut
 Características do Programa 🦾
 
 Código desenvolvido em linguagem C; 🖥️
+
 A estrutura de dados escolhida Árvore Binária de Busca (BST). 🔗
 
 O programa é acessado através do terminal; ⌨️
