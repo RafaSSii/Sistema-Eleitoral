@@ -92,9 +92,11 @@ Node* loadArq(){
     if (!f) return NULL;
     Node* raiz = NULL;
     Eleitor e;
-    while (fscanf(f, "%[^;];%[^;];%[^\n]\n", e.nome, e.titulo, e.voto) != EOF){
+
+    while (fscanf(f, "%99[^;];%19[^;];%49[^\n]\n", e.nome, e.titulo, e.voto) == 3) {
         raiz = add(raiz, e);
     }
+
     fclose(f);
     return raiz;
 }
