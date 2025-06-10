@@ -17,7 +17,7 @@ Os dados sejam mantidos em um arquivo de texto chamado database.txt; 💾
   ---
   
   Estrutura de Dados Utilizada
-O projeto utiliza a seguinte estrutura para representar os contatos:
+O projeto utiliza a seguinte estrutura para representar os eleitores:
 
 ![image](https://github.com/user-attachments/assets/5a982729-47f3-45a4-84ea-2786e62428b4)
 
