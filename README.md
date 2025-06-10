@@ -12,7 +12,7 @@ O programa é acessado através do terminal; ⌨️
 
 Ele tem CRUD 📊
 
-Os dados sejam mantidos em um arquivo de texto chamado banco_dados.txt; 💾
+Os dados sejam mantidos em um arquivo de texto chamado database.txt; 💾
 
   ---
   
